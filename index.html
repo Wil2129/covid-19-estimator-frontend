@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>COVID-19 Estimator</h1>
+        <h3>An overly simplified COVID-19 infections impact estimator</h3>
+        
+        <form action="#" method="post">
+            <div>
+                <label for="population">Population: </label>
+                <div>
+                    <input type="number" name="population" id="population" required data-population>
+                </div>
+            </div>
+            <div>
+                <label for="time-to-elapse">Time to elapse: </label>
+                <div>
+                    <input type="number" name="time-to-elapse" id="time-to-elapse" required data-time-to-elapse>
+                </div>
+            </div>
+            <div>
+                <label for="reported-cases">Reported cases: </label>
+                <div>
+                    <input type="number" name="reported-cases" id="reported-cases" required data-reported-cases>
+                </div>
+            </div>
+            <div>
+                <label for="hospital-beds">Total hospital beds: </label>
+                <div>
+                    <input type="number" name="hospital-beds" id="hospital-beds" required data-total-hospital-beds>
+                </div>
+            </div>
+            <div>
+                <label for="period-type">Period type: </label>
+                <div>
+                    <select name="period-type" id="period-type" required data-period-type>
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months">Months</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn">
+                <button name="estimate" type="submit" data-go-estimate>Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script defer src="main.js"></script>
+</body>
+</html>

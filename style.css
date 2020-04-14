@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right top, indianred, darkviolet);
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(127, 127, 127, 0.5);
+    /* border-radius: 8px; */
+    width: 50%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: white;
+}
+
+h1, h3 {
+    margin: 0;
+    text-align: center;
+    max-width: 75%;
+}
+
+h3 {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    color: dimgray;
+}
+
+form {
+    display: grid;
+    width: 75%;
+    grid-auto-rows: 72px;
+    gap: 16px 0;
+    align-items: center;
+}
+
+input, select, button, option {
+    min-width: 48px;
+    height: 32px;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 0.8rem;
+    color: #404040;
+}
+
+label + div {
+    margin-top: 8px;
+}
+
+input, select, option {
+    width: 100%;
+}
+
+input, select {
+    font-weight: lighter;
+    background-color: whitesmoke;
+    border-style: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5px;
+    border-bottom-color: darkgray;
+    transition-property: border-bottom-width, border-bottom-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+input:focus, select:focus {
+    border-bottom-width: 1.5px;
+    border-bottom-color: mediumslateblue;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 50%;
+    height: 40px;
+    color: white;
+    font-weight: bolder;
+    background-color: mediumslateblue;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    border-style: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .card {
+        width: 75%;
+    }
+}
