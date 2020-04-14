@@ -50,7 +50,7 @@ input, select, button, option {
 
 label {
     font-weight: bolder;
-    font-size: 0.8rem;
+    /* font-size: 0.875rem; */
     color: #404040;
     margin-left: 4px;
 }
@@ -67,6 +67,7 @@ input, select, option {
 
 input, select {
     font-weight: lighter;
+    font-size: 0.875rem;
     background-color: whitesmoke;
     border-style: none;
     border-top-left-radius: 4px;
@@ -79,9 +80,13 @@ input, select {
     transition-timing-function: ease-in-out;
 }
 
+option {
+    background-color: white;
+}
+
 input:focus, select:focus {
     border-bottom-width: 1.5px;
-    border-bottom-color: mediumslateblue;
+    border-bottom-color: blueviolet;
 
 }
 
@@ -95,7 +100,7 @@ button {
     height: 40px;
     color: white;
     font-weight: bolder;
-    background-color: mediumslateblue;
+    background-color: blueviolet;
     -webkit-appearance: none;
     appearance: none;
     -moz-appearance: none;
